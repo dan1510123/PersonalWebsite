@@ -1,0 +1,13 @@
+﻿Possible projects that I can demo
+---------------------------------
+Spring 2020:
+HideAndSheep
+SpotifyPlaylistAnalyzer
+RealmMultiUserTracker
+
+Fall 2020:
+Blockball from KHE 2019
+Vetris
+
+Earlier:
+Turnscape
