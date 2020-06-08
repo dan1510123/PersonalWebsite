@@ -1,11 +1,24 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 /** Header navbar */
-#bootstrap-overrides .navheader-text {
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap);
+
+/** Bootstrap overrides */
+#bootstrap-overrides .navheader-text, .dropdown-item {
     color: white;
-    font-family: "Verdana";
+    font-family: Menlo, Monaco;
 }
 
+#bootstrap-overrides .dropdown-menu {
+    background: black;
+}
+
+#bootstrap-overrides .nav-item {
+    padding-left: 1rem;
+}
+
+/** Navbar */
 .navbar {
     background: black;
 }
@@ -37,6 +50,7 @@ a {
 -------------------------------------------------- */
 html {
   font-size: 14px;
+  background: black;
 }
 @media (min-width: 768px) {
   html {
@@ -77,4 +91,97 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+
+/** Icons */
+.icon_group {
+    display: flex;
+    flex-direction: column;
+    left: 1rem;
+    bottom: 80px;
+    position: fixed;
+    z-index: 1;
+}
+
+.icon_container {
+    font-family: 'Courier Bold', Courier, monospace;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    border: 3px solid white;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    align-content: center;
+    text-align: center;
+    line-height: 32px;
+    margin-top: 6px;
+    z-index: 10;
+    -moz-box-shadow: 4px 0px 20px rgba(68, 68, 68, 0.4);
+    -webkit-box-shadow: 4px 0px 20px rgba(68, 68, 68, 0.4);
+    box-shadow: 4px 0px 20px rgba(68, 68, 68, 0.4);
+    cursor: pointer;
+}
+
+.resume:hover,
+.resume:active {
+    background-color: #ffbb00e3;
+}
+
+.github:hover,
+.github:active {
+    background-color: #2F4F4F;
+}
+
+.linkedin:hover,
+.linkedin:active {
+    background-color: #0e76a8;
+}
+
+.gmail:hover,
+.gmail:active {
+    background-color: #cb2027;
+}
+
+/* The typing effect */
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 12rem;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255,255,255,.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.typewriter {
+    color: white;
+    display: none;
+    padding-left: 6px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.icon:hover + .typewriter {
+    display: block;
+    font-family: "Anonymous Pro";
+    text-align: left;
+    overflow: hidden;
+    animation: typewriter 1s steps(20) 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
 }
