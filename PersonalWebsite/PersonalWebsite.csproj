@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Content Remove="Template.cshtml" />
+    <Content Remove="Pages\UnderConstruction.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Template.cshtml">

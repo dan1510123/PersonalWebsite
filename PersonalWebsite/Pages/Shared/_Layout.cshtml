@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<body>
+<body id="bootstrap-overrides">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">DanielLuo</a>
+                <a class="navbar-brand navheader-text" asp-area="" asp-page="/Index"><b>DanielLuo</b></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -19,31 +19,31 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link navheader-text" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">About Me</a>
+                            <a class="nav-link navheader-text" asp-route-pagetype="About" asp-area="" asp-page="/Construction">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+                            <a class="nav-link dropdown-toggle navheader-text" asp-route-pagetype="Projects" asp-page="/Construction" >Projects<b class="caret"></b></a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" asp-page="/Index">Personal Projects</a></li>
-                                <li><a class="dropdown-item" asp-page="/Index">School Projects</a></li>
+                                <li><a class="dropdown-item" asp-route-pagetype="Personal Projects" asp-page="/Construction">Personal Projects</a></li>
+                                <li><a class="dropdown-item" asp-route-pagetype="School Projects" asp-page="/Construction">School Projects</a></li>
                                 <li><div class="dropdown-divider"></div></li>
-                                <li><a class="dropdown-item" asp-page="/Index">All Projects</a>
+                                <li><a class="dropdown-item" asp-route-pagetype="All Projects" asp-page="/Construction">All Projects</a>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown">Experiences<b class="caret"></b></a>
+                            <a class="nav-link dropdown-toggle navheader-text" asp-route-pagetype="Experiences" asp-page="/Construction" >Experiences<b class="caret"></b></a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" asp-page="/Index">Internships</a>
-                                <a class="dropdown-item" asp-page="/Index">Other Work</a>
+                                <a class="dropdown-item" asp-route-pagetype="Internships" asp-page="/Construction">Internships</a>
+                                <a class="dropdown-item" asp-route-pagetype="Other Work" asp-page="/Construction">Other Work</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" asp-page="/Index">All Experience</a>
+                                <a class="dropdown-item" asp-route-pagetype="All Experience" asp-page="/Construction">All Experience</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Contact">Contact</a>
+                            <a class="nav-link navheader-text" asp-area="" asp-page="/Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -64,7 +64,7 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js"></script>
 
     @RenderSection("Scripts", required: false)
 </body>
