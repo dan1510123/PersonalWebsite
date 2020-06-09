@@ -46,12 +46,15 @@ a {
   border-color: #1861ac;
 }
 
-/* Sticky footer styles
+/* HTML
 -------------------------------------------------- */
 html {
-  font-size: 14px;
-  background: black;
+    font-size: 14px;
+    background: black;
+    position: relative;
+    min-height: 100%;
 }
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -76,13 +79,9 @@ button.accept-policy {
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
   /* Margin bottom by footer height */
+  background: black;
   margin-bottom: 60px;
 }
 .footer {
@@ -91,6 +90,24 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+
+/** Index page */
+.index-container {
+    padding-left: 10%;
+    text-align: left;
+}
+
+.index-hi {
+    color: white;
+    font-size: 2rem;
+}
+
+.index-name {
+    width: 5em;
+    color: white;
+    text-align: left;
+    font-size: 6rem;
 }
 
 /** Icons */
@@ -162,11 +179,20 @@ body {
 
 @keyframes blinkTextCursor {
     from {
-        border-right-color: rgba(255,255,255,.75);
+        border-right: .15em solid orange;
     }
 
     to {
-        border-right-color: transparent;
+        border-right: .15em solid transparent;
+    }
+}
+@keyframes visible-typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 5em;
     }
 }
 
@@ -183,5 +209,16 @@ body {
     font-family: "Anonymous Pro";
     text-align: left;
     overflow: hidden;
-    animation: typewriter 1s steps(20) 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+    animation: typewriter 1s steps(20) 1 normal both;
+}
+
+.visible-typewriter {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: .5em;
+    border-right: hidden; /* The typwriter cursor */
+    animation-name: visible-typewriter, blinkTextCursor;
+    animation-duration: 2.5s, .8s;
+    animation-iteration-count: 1, 4;
 }
