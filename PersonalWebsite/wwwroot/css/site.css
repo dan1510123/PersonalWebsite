@@ -18,6 +18,10 @@ for details on configuring this project to bundle and minify static web assets. 
     padding-left: 1rem;
 }
 
+#bootstrap-overrides .navbar-toggler {
+    background: white;
+}
+
 /** Navbar */
 .navbar {
     background: black;
@@ -95,19 +99,20 @@ body {
 /** Index page */
 .index-container {
     padding-left: 10%;
+    padding-right: 10%;
     text-align: left;
 }
 
 .index-hi {
     color: white;
-    font-size: 2rem;
+    font-size: 3vw;
 }
 
 .index-name {
     width: 5em;
     color: white;
     text-align: left;
-    font-size: 6rem;
+    font-size: 8vw;
 }
 
 /** Icons */
