@@ -101,6 +101,15 @@ body {
     padding-left: 10%;
     padding-right: 10%;
     text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.index-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10%;
 }
 
 .index-hi {
@@ -113,6 +122,13 @@ body {
     color: white;
     text-align: left;
     font-size: 8vw;
+}
+
+.index-description {
+    width: 80%;
+    color: white;
+    text-align: left;
+    font-size: 2vw;
 }
 
 /** Icons */
