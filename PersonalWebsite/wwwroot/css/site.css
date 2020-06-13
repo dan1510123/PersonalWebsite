@@ -100,7 +100,7 @@ body {
 .index-container {
     padding-left: 10%;
     padding-right: 10%;
-    text-align: left;
+    text-align: right;
     display: flex;
     flex-direction: row;
 }
@@ -109,12 +109,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 .index-hi {
     color: white;
     font-size: 3vw;
+    text-align: left;
 }
 
 .index-name {
@@ -125,7 +126,7 @@ body {
 }
 
 .index-description {
-    width: 80%;
+    width: 100%;
     color: white;
     text-align: left;
     font-size: 2vw;
