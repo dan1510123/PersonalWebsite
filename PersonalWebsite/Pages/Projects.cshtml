@@ -1,0 +1,56 @@
+﻿@page
+@model ProjectsModel
+@{
+    ViewData["Title"] = "Projects";
+    ViewData["Personal"] = "Personal Projects";
+    ViewData["School"] = "School Projects";
+    ViewData["All"] = "All Projects";
+}
+<h1 style="font-size: 5rem; text-align: center; color: white">@ViewData["Title"]</h1>
+
+<div id="Personal" class="page-container border-top">
+    <h2 style="padding-top: 1rem; font-size: 3rem; text-align: center; color: white">
+        <a style="text-decoration: underline;">@ViewData["Personal"]</a>
+    </h2>
+    <div class="center-pic">
+        <img src="images/aboutme.png" style="height: 15em; width: 30em;" />
+    </div>
+    <p style="font-family: Roboto;font-size: 1.2rem; text-align: center">
+        <br>
+        My name is Daniel<br>
+        I go to Case Western Reserve University and I graduate in December 2020<br>
+        <a style="text-decoration: underline;">Some of my personal hobbies are:</a><br>
+        Ultimate frisbee (disc golf too)<br>
+        Videogames (Valorant, Rocket League)<br>
+        Personal coding projects<br>
+        All sports / exercise<br>
+    </p>
+</div>
+
+<div id="School" class="page-container border-top">
+    <h2 style="padding-top: 1rem; font-size: 3rem; text-align: center; color: white">
+        <a style="text-decoration: underline;">@ViewData["School"]</a>
+    </h2>
+    <div class="center-pic">
+        <img src="images/aboutme.png" style="height: 15em; width: 30em;" />
+    </div>
+    <p style="font-family: Roboto;font-size: 1.2rem; text-align: center">
+        <br>
+        My name is Daniel<br>
+        I go to Case Western Reserve University and I graduate in December 2020<br>
+        <a style="text-decoration: underline;">Some of my personal hobbies are:</a><br>
+        Ultimate frisbee (disc golf too)<br>
+        Videogames (Valorant, Rocket League)<br>
+        Personal coding projects<br>
+        All sports / exercise<br>
+    </p>
+</div>
+
+<div id="All" class="page-container border-top">
+    <h2 style="padding-top: 1rem; font-size: 3rem; text-align: center; color: white">
+        <a style="text-decoration: underline;">@ViewData["All"]</a>
+    </h2>
+    <p style="font-family: Roboto;font-size: 1.2rem; text-align: center">
+        List of all my projects
+    </p>
+</div>

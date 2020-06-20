@@ -22,16 +22,16 @@
                             <a class="nav-link navheader-text" asp-area="" asp-page="/About">01.About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle navheader-text" asp-route-pagetype="Projects" asp-page="/Construction" >02.Projects<b class="caret"></b></a>
+                            <a class="nav-link dropdown-toggle navheader-text" asp-page="/Projects">02.Projects<b class="caret"></b></a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" asp-route-pagetype="Personal Projects" asp-page="/Construction">Personal Projects</a></li>
-                                <li><a class="dropdown-item" asp-route-pagetype="School Projects" asp-page="/Construction">School Projects</a></li>
+                                <li><a class="dropdown-item" asp-fragment="Personal" asp-page="/Projects">Personal Projects</a></li>
+                                <li><a class="dropdown-item" asp-fragment="School" asp-page="/Projects">School Projects</a></li>
                                 <li><div class="dropdown-divider"></div></li>
-                                <li><a class="dropdown-item" asp-route-pagetype="All Projects" asp-page="/Construction">All Projects</a>
+                                <li><a class="dropdown-item" asp-fragment="All" asp-page="/Projects">All Projects</a>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle navheader-text" asp-route-pagetype="Experiences" asp-page="/Construction" >03.Experiences<b class="caret"></b></a>
+                            <a class="nav-link dropdown-toggle navheader-text" asp-route-pagetype="Experiences" asp-page="/Construction">03.Experiences<b class="caret"></b></a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" asp-route-pagetype="Internships" asp-page="/Construction">Internships</a>
                                 <a class="dropdown-item" asp-route-pagetype="Other Work" asp-page="/Construction">Other Work</a>
@@ -48,9 +48,40 @@
         </nav>
     </header>
     <div class="container">
-         @RenderBody()
+        @RenderBody()
     </div>
 
+    <div class="icon_group">
+        <a class="icon_container" href="https://drive.google.com/open?id=1oiAOoc2e_N0v-425_tXRUZfEOpCfdTfM" target="_blank" style="text-decoration:none;">
+            <div class="icon resume">
+                <img src="~/images/resume.png" style="padding-top: 1px; padding-left: 2px; height: 24px; width: 24px;" />
+                <div class="background_circle"></div>
+            </div>
+            <div class="typewriter"><b>Resume</b></div>
+        </a>
+
+        <a class="icon_container" href="https://www.github.com/dan1510123" target="_blank" style="text-decoration:none;">
+            <div class="icon github">
+                <img src="~/images/github.png" style="padding-top: 3px; height: 30px; width: 30px;" />
+                <div class="background_circle"></div>
+            </div>
+            <div class="typewriter"><b>Github</b></div>
+        </a>
+        <a class="icon_container" href="https://www.linkedin.com/in/danielluo8" target="_blank" style="text-decoration:none;">
+            <div class="icon linkedin">
+                <img src="~/images/linkedin.png" style="padding-top: 1px; height: 30px; width: 30px;" />
+                <div class="background_circle"></div>
+            </div>
+            <div class="typewriter"><b>Linkedin</b></div>
+        </a>
+        <a class="icon_container" href="mailto:dyl24@case.edu" target="_blank" style="text-decoration:none;">
+            <div class="icon gmail">
+                <img src="~/images/gmail.png" style="padding-top: 1px; height: 30px; width: 30px;" />
+                <div class="background_circle"></div>
+            </div>
+            <div class="typewriter"><b>Email</b></div>
+        </a>
+    </div>
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2020 - DanielLuo - <a asp-area="" asp-page="/Contact">Contact</a>
