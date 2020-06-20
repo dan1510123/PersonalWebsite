@@ -98,8 +98,8 @@ body {
 
 /** Index page */
 .index-container {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     text-align: right;
     display: flex;
     flex-direction: row;
@@ -126,11 +126,51 @@ body {
 }
 
 .index-description {
-    width: 100%;
+    font-family: Helvetica, 'Times New Roman', Times, serif;
+    width: 85%;
     color: white;
     text-align: left;
     font-size: 2vw;
 }
+
+.white-hyperlink {
+    color: white;
+}
+
+.microsoft:hover {
+    color: #4599ff;
+}
+
+
+.amazon:hover {
+    color: #ffad0a;
+}
+
+
+.rockwell:hover {
+    color: #ff4a4a;
+}
+
+/** Other pages */
+.page-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+
+.center-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bootstrap-overrides .centered {
+    text-align: center;
+}
+
 
 /** Icons */
 .icon_group {
