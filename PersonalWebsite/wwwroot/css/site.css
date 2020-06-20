@@ -283,3 +283,12 @@ body {
     animation-duration: 2.5s, .8s;
     animation-iteration-count: 1, 4;
 }
+
+/** Table stuff */
+.table {
+    color: #00e317;
+    text-align: left;
+    overflow: hidden;
+    background-color: #2e2e2e;
+    font-family: Helvetica, monospace
+}
