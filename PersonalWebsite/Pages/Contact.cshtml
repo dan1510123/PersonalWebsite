@@ -3,7 +3,38 @@
 @{
     ViewData["Title"] = "Contact Information";
 }
-<h1>@ViewData["Title"]</h1>
+<h1 style="font-size: 5rem; text-align: center; color: white">@ViewData["Title"]</h1>
 
-<p>This page is under construction as of @ViewData["TimeStamp"] and who knows when it will be done.</p>
-<p>But my email is dyl24@case.edu :)</p>
+<div class="contact">
+    <div class="icon_group_contact">
+        <a class="icon_container_contact" href="https://drive.google.com/open?id=1oiAOoc2e_N0v-425_tXRUZfEOpCfdTfM" target="_blank" style="text-decoration:none;">
+            <div class="icon_contact resume">
+                <img src="~/images/resume.png" style="padding-top: 5px; padding-left: 2px; height: 4rem; width: 4rem;" />
+                <div class="background_circle"></div>
+            </div>
+            <div class="contact-text"><b>Resume</b></div>
+        </a>
+
+        <a class="icon_container_contact" href="https://www.github.com/dan1510123" target="_blank" style="text-decoration:none;">
+            <div class="icon_contact github">
+                <img src="~/images/github.png" style="padding-top: 7px; height: 4rem; width: 4rem;" />
+                <div class="background_circle"></div>
+            </div>
+            <div class="contact-text"><b>Github</b></div>
+        </a>
+        <a class="icon_container_contact" href="https://www.linkedin.com/in/danielluo8" target="_blank" style="text-decoration:none;">
+            <div class="icon_contact linkedin">
+                <img src="~/images/linkedin.png" style="padding-top: 3px; height: 4rem; width: 4rem;" />
+                <div class="background_circle"></div>
+            </div>
+            <div class="contact-text"><b>Linkedin</b></div>
+        </a>
+        <a class="icon_container_contact" href="mailto:dyl24@case.edu" target="_blank" style="text-decoration:none;">
+            <div class="icon_contact gmail">
+                <img src="~/images/gmail.png" style="padding-top: 5px; height: 4rem; width: 4rem;" />
+                <div class="background_circle"></div>
+            </div>
+            <div class="contact-text"><b>Email</b></div>
+        </a>
+    </div>
+</div>
